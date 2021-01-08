@@ -14,8 +14,8 @@
       register: ec2_regst
     - name: output ec2_regst var contents
       debug:
-         msg: "{{ec2_regst.device_ids}}"
+         msg: "{{ec2_regst.instance_ids}}"
     - name: save output to a file
       copy:
-         content: "{{ec2_regst.device_ids}}"
+         content: "{{ec2_regst.instance_ids}}"
          dest: "./device_ids.txt"
