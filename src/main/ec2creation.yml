@@ -18,4 +18,4 @@
     - name: save output to a file
       copy:
          content: "{{ec2_regst.instance_ids}}"
-         dest: "./device_ids.txt"
+         dest: "/root/device_details/device_ids.txt"
